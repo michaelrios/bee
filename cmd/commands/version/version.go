@@ -14,10 +14,10 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/beego/bee/cmd/commands"
-	beeLogger "github.com/beego/bee/logger"
-	"github.com/beego/bee/logger/colors"
-	"github.com/beego/bee/utils"
+	"github.com/michaelrios/bee/cmd/commands"
+	beeLogger "github.com/michaelrios/bee/logger"
+	"github.com/michaelrios/bee/logger/colors"
+	"github.com/michaelrios/bee/utils"
 	"gopkg.in/yaml.v2"
 )
 
@@ -57,7 +57,7 @@ Prints the current Bee, Beego and Go version alongside the platform information.
 }
 var outputFormat string
 
-const version = "1.10.0"
+const version = "1.10.1"
 
 func init() {
 	fs := flag.NewFlagSet("version", flag.ContinueOnError)
@@ -159,7 +159,7 @@ func GetBeegoVersion() string {
 		}
 
 	}
-	return "Beego is not installed. Please do consider installing it first: https://github.com/astaxie/beego"
+	return "Beego is not installed. Please do consider installing it first: https://github.com/spiritclips/beego"
 }
 
 func GetGoVersion() string {
